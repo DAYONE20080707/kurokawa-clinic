@@ -20,7 +20,7 @@ const ContentHeadline: React.FC<ContentHeadlineProps> = ({
     <section
       id={id}
       className={classNames(
-        "w-full md:max-w-[1200px] mb-16 tracking-wide text-accentColor",
+        "w-full md:max-w-[1200px] mb-16 tracking-wide",
         className
       )}
     >
@@ -35,19 +35,19 @@ const ContentHeadline: React.FC<ContentHeadlineProps> = ({
       )}
       <h1
         className={classNames(
-          "text-sm md:text-lg font-semibold",
+          "text-sm md:text-lg font-semibold font-en text-accentColor italic tracking-[0.03em]",
           titleClassName
         )}
       >
-        {mainTitle}
+        {enTitle}
       </h1>
       <h3
         className={classNames(
-          "text-[40px] font-en leading-[120%] mt-1",
+          "text-[32px] leading-[150%] mt-2",
           enTitleClassName
         )}
       >
-        {enTitle}
+        {mainTitle}
       </h3>
 
       {subTitle && <h2>{subTitle}</h2>}

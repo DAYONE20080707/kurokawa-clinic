@@ -8,9 +8,9 @@ const TelButton = ({ className = "" }: { className?: string }) => {
   return (
     <Link
       href={companyTelHref}
-      className={`bg-black text-white cursor-pointer flex items-center justify-center w-full px-10 font-semibold h-10 ${className}`}
+      className={`bg-baseColor text-white cursor-pointer flex items-center justify-center w-[300px] font-semibold text-2xl ${className}`}
     >
-      <PhoneIcon className="w-4 h-4 mr-1" />
+      <PhoneIcon className="w-6 h-6 mr-2" />
       {companyTel}
     </Link>
   )

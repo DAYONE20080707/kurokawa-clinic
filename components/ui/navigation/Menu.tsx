@@ -1,16 +1,21 @@
 //components/ui/navigation/Menu.tsx
 export const Menu = [
+
+  {
+    name: "About us",
+    nameJa: "当院のご紹介",
+    href: "/#news",
+  },
   {
     name: "Our Service",
-    nameJa: "事業内容",
+    nameJa: "診療のご案内",
     href: "/#service",
   },
   {
-    name: "About  us",
-    nameJa: "会社概要",
-    href: "/#about",
+    name: "Who we are",
+    nameJa: "院内のご様子",
+    href: "/#hospital",
   },
-
   // {
   //   name: '料金プラン',
   //   href: '/#plan',

@@ -14,10 +14,6 @@ const KeyVisualContent: React.FC<KeyVisualContentProps> = ({ className }) => {
 
   const slides = [
     { src: "/top/kv/kv_img1.jpg", alt: "KV Image 1" },
-    { src: "/top/kv/kv_img2.jpg", alt: "KV Image 2" },
-    { src: "/top/kv/kv_img3.jpg", alt: "KV Image 3" },
-    { src: "/top/kv/kv_img4.jpg", alt: "KV Image 4" },
-    { src: "/top/kv/kv_img5.jpg", alt: "KV Image 5" },
   ]
 
   useEffect(() => {

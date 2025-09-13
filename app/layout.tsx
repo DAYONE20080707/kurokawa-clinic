@@ -1,12 +1,19 @@
 import "./globals.css"
 import type { Metadata, Viewport } from "next"
 import ToastProvider from "@/components/providers/ToastProvider"
-import { Noto_Sans_JP } from "next/font/google"
+import { Noto_Serif_JP, Spectral } from "next/font/google"
 import { GoogleTagManager } from "@next/third-parties/google"
 
-// Noto Sans JP フォントの設定
-const notoSansJP = Noto_Sans_JP({
+// Noto Serif JP フォントの設定
+const notoSerifJP = Noto_Serif_JP({
   weight: ["200", "300", "400", "500", "600", "700", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+})
+
+// Spectral フォントの設定
+const spectral = Spectral({
+  weight: ["200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 })
@@ -42,7 +49,7 @@ interface RootLayoutProps {
 const RootLayout = async ({ children }: RootLayoutProps) => {
   return (
     <html lang="ja">
-      <body className="font-notoSansJP text-baseColor">
+      <body className="font-notoSerifJP text-baseColor">
         <GoogleTagManager gtmId="GTM-5VZQPT43" />
         <ToastProvider />
         {children}

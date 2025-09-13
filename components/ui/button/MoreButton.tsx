@@ -7,7 +7,7 @@ const MoreLinkButton = ({
   href = "/", // デフォルトの href を "/" に設定
   className = "",
   children = "View more", // デフォルトのテキスト
-  variant = "white", // デフォルトは白バージョン
+  variant = "orange", // デフォルトは白バージョン
 }: {
   href?: string
   className?: string
@@ -42,7 +42,7 @@ const MoreLinkButton = ({
     <Link
       href={href}
       className={classNames(
-        "border font-en tracking-[0.03em] cursor-pointer flex items-center justify-between w-full md:w-[300px] px-6 py-4 relative group",
+        "border tracking-[0.03em] cursor-pointer flex items-center justify-between w-full md:w-[350px] px-6 py-4 relative group rounded-[10px] text-base",
         getVariantStyles(),
         className
       )}

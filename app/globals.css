@@ -76,8 +76,8 @@ body,
 }
 
 /* Custom Font Classes */
-.font-notoSansJP {
-  font-family: "Noto Sans JP", sans-serif;
+.font-notoSerifJP {
+  font-family: "Noto Serif JP", serif;
 }
 
 .font-marcellus {
@@ -85,7 +85,7 @@ body,
 }
 
 .font-en {
-  font-family: var(--font-marcellus), serif;
+  font-family: "Spectral", serif;
 }
 
 /* swiper */
