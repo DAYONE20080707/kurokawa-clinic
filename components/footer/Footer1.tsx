@@ -7,6 +7,7 @@ import Sns from "@/components/ui/button/SnsButton"
 import FooterLinks from "@/components/ui/navigation/FooterLinks"
 import CompanyInfo from "@/components/ui/navigation/CompanyInfo"
 import ContactButton from "@/components/ui/button/ContactButton"
+import ContactButtonTel from "../ui/button/ContactButtonTel"
 
 // フッター
 const Footer1 = () => {
@@ -20,15 +21,15 @@ const Footer1 = () => {
               {CompanyInfo[0].companyName("primary")}
             </h4>
             <p>医療法人 愛基会　黒川医院</p>
-            <p>{companyAddress}</p>
+            <p>〒{companyPostalCode}{'　'}{companyAddress}</p>
           </div>
           <div className="flex flex-col md:items-end mt-5 md:mt-0">
             <ul className="md:flex items-center md:space-x-10 font-light space-y-5 md:space-y-0">
-              <li>
+              {/* <li>
                 <Link href="/">
                   <div>トップページ</div>
                 </Link>
-              </li>
+              </li> */}
               {Menu.map((item, index) => (
                 <li key={index}>
                   <Link href={item.href}>
@@ -37,8 +38,9 @@ const Footer1 = () => {
                 </li>
               ))}
             </ul>
-            <div className="mt-7">
-              <ContactButton className="">お問い合わせ</ContactButton>
+            <div className="mt-7 md:flex gap-2">
+              <ContactButton className="">メールでお問い合わせ</ContactButton>
+              <ContactButtonTel className="">072-687-0373</ContactButtonTel>
             </div>
           </div>
         </div>
@@ -70,8 +72,8 @@ const Footer1 = () => {
             ))}
           </ul> */}
         </div>
-        <small className="mt-4 flex justify-end items-center md:text-base">
-          ©Ascent Vision. ALL Rights Reserved.
+        <small className="mt-4 flex justify-center items-center md:text-base">
+          ©Kurokawa clinic. ALL Rights Reserved.
         </small>
       </div>
     </footer>

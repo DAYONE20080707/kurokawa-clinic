@@ -1,7 +1,7 @@
 import Link from "next/link"
-import { EnvelopeIcon } from "@heroicons/react/24/outline"
+import { PhoneIcon } from "@heroicons/react/24/outline"
 
-const ContactButton = ({
+const ContactButtonTel = ({
   className = "",
   children = "Contact us", // デフォルトのテキスト
 }: {
@@ -14,16 +14,14 @@ const ContactButton = ({
   return (
     <Link
       href="/coming-soon"
-      className={`bg-accentColor text-white cursor-pointer flex items-center justify-center w-full px-10 py-4 rounded-[10px] whitespace-nowrap ${
-        isEnglish
-          ? "font-en text-lg tracking-[0.03em]"
-          : " text-base tracking-[0.05em]"
+      className={`bg-baseColor text-white cursor-pointer flex items-center justify-center w-full px-10 py-4 rounded-[10px] whitespace-nowrap ${
+        isEnglish ? "font-en text-lg tracking-[0.03em]" : " text-base tracking-[0.05em]"
       } ${className}`}
     >
-      <EnvelopeIcon className="w-4 h-4 mr-1" />
+      <PhoneIcon className="w-4 h-4 mr-1" />
       {children}
     </Link>
   )
 }
 
-export default ContactButton
+export default ContactButtonTel
