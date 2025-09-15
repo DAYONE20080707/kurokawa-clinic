@@ -54,6 +54,7 @@ import Profile_01 from "@/components/top/profile/Profile_01"
 import Profile_02 from "@/components/top/profile/Profile_02"
 import Profile_03 from "@/components/top/profile/profile_03"
 import Profile_04 from "@/components/top/profile/profile_04"
+import Profile_05 from "@/components/top/profile/Profile_05"
 import Flow_01 from "@/components/top/flow/Flow_01"
 import Flow_02 from "@/components/top/flow/Flow_02"
 import Cta_01 from "@/components/ui/module/cta/Cta_01"
@@ -71,7 +72,7 @@ const HomePage = () => {
       <Blog_06 />
       <Service_01 />
       <About_03 />
-      <Profile_02 />
+      <Profile_05 />
     </div>
   )
 }

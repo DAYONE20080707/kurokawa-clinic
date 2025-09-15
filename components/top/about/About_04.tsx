@@ -3,7 +3,7 @@
 "use client";
 
 import MoreLinkButton from "@/components/ui/button/MoreButton";
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
+
 import SectionContent from "@/components/ui/frame/SectionContent";
 import Image from "next/image";
 import AboutSection from "@/components/ui/module/AboutSection_04";
@@ -12,24 +12,19 @@ import AboutSection from "@/components/ui/module/AboutSection_04";
 const About_04 = () => {
   return (
     <>
-      <SectionContent className="![padding-bottom:0]">
+      <SectionContent className="" variant="yellow">
         {/* widthがフルサイズでない場合は指定する */}
-        <section className=" md:max-w-[1200px] mx-auto ">
-          <ContentHeadline enTitle="Who we are" mainTitle="私たちについて" />
+        <section className=" md:max-w-[1200px] mx-auto bg-white p-5 md:p-14 rounded-[20px]">
+         
           <AboutSection
-            title="無数の選択肢の中から\nベストな選択を"
-            description={`経営者は日々悩んでいます。そして、日々決断しています。
-
-一番成果が上がる選択はどれか。一番効率のいい選択はどれか。
-無数の選択肢の中からベストな選択ができるよう、
-常に試行錯誤し決断しています。
-
-私たちはその決断が本当にベストなのか、検討しています。
-そして、その決断が本当のベストになるためのサポートを
-常に用意しています。`}
+            // title="無数の選択肢の中から\nベストな選択を"
+            description={`黒川医院は1967（昭和42）年に現在の高槻市日吉台に初代院長黒川正夫によって開設されました。
+              当時はこの地には医療機関が一軒もなく、住宅もまだ少なかったです。
+医院建物・設備の老朽化により、旧医院の向かいの土地に新しく医院建物を建築し、2020（令和2）年
+6月から診療を開始して、現在に至っています。`}
             buttonHref="/about"
             // 以下は任意
-            // imageUrl="/path/to/image.jpg"
+            imageUrl="/top/about/hospital.jpg"
             // position="代表取締役"
             // name="山田太郎"
           />

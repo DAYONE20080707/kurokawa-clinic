@@ -8,11 +8,13 @@ const MoreLinkButton = ({
   className = "",
   children = "View more", // デフォルトのテキスト
   variant = "orange", // デフォルトは白バージョン
+  shape = "rounded", // デフォルトは角丸
 }: {
   href?: string
   className?: string
   children?: React.ReactNode
   variant?: "white" | "orange" | "black"
+  shape?: "rounded" | "square"
 }) => {
   // バリエーションに基づくスタイルを決定
   const getVariantStyles = () => {
@@ -23,6 +25,16 @@ const MoreLinkButton = ({
         return "bg-transparent text-baseColor border-baseColor"
       default: // white
         return "bg-transparent text-white border-white"
+    }
+  }
+
+  // 形状に基づくスタイルを決定
+  const getShapeStyles = () => {
+    switch (shape) {
+      case "square":
+        return "rounded-none"
+      default: // rounded
+        return "rounded-[10px]"
     }
   }
 
@@ -42,8 +54,9 @@ const MoreLinkButton = ({
     <Link
       href={href}
       className={classNames(
-        "border tracking-[0.03em] cursor-pointer flex items-center justify-between w-full md:w-[350px] px-6 py-4 relative group rounded-[10px] text-base",
+        "border tracking-[0.03em] cursor-pointer flex items-center justify-between w-full md:w-[350px] px-6 py-4 relative group text-base",
         getVariantStyles(),
+        getShapeStyles(),
         className
       )}
     >

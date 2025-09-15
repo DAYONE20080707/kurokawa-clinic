@@ -1,13 +1,14 @@
-import MoreButton from "@/components/ui/button/MoreButton";
-import Image from "next/image";
+import MoreButton from "@/components/ui/button/MoreButton"
+import Image from "next/image"
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
 
 interface AboutSection_04Props {
-  title: string; // 見出しテキスト
-  description: string; // 本文
-  buttonHref?: string; // ボタンリンク先（任意）
-  imageUrl?: string; // 画像URL（任意）
-  position?: string; // 役職（任意）
-  name?: string; // 氏名（任意）
+  title?: string // 見出しテキスト
+  description: string // 本文
+  buttonHref?: string // ボタンリンク先（任意）
+  imageUrl?: string // 画像URL（任意）
+  position?: string // 役職（任意）
+  name?: string // 氏名（任意）
 }
 
 const AboutSection_04 = ({
@@ -25,16 +26,17 @@ const AboutSection_04 = ({
         {line}
         {i !== text.split("\\n").length - 1 && <br />}
       </span>
-    ));
-  };
+    ))
+  }
 
   return (
-    <div className=" md:mt-16 flex flex-col md:flex-row justify-between gap-10 md:gap-20 border-b-2 pb-24">
-      <div className="md:max-w-[600px] ">
-        <h3 className="text-3xl md:text-5xl  font-light leading-relaxed md:leading-[64px] mt-10 md:mt-0">
+    <div className=" flex flex-col md:flex-row justify-between gap-10 md:gap-[120px]">
+      <div className="md:max-w-[500px] ">
+        <ContentHeadline enTitle="Who we are" mainTitle="院内の様子" />
+        {/* <h3 className="text-3xl md:text-5xl  font-light leading-relaxed md:leading-[64px] mt-10 md:mt-0">
           {convertNewLines(title)}
-        </h3>
-        <p className="mt-10 leading-relaxed md:leading-[45px] md:text-lg whitespace-pre-line">
+        </h3> */}
+        <p className="mt-10 md:text-base whitespace-pre-line tracking-[0.03em] ![line-height:250%]">
           {description}
         </p>
         {(position || name) && (
@@ -48,19 +50,21 @@ const AboutSection_04 = ({
           <MoreButton
             href={buttonHref}
             className="mt-10 text-accentColor border-accentColor"
-          />
+            shape="square"
+          >院内の様子</MoreButton>
         )}
       </div>
-      <div className="md:w-[36vw] md:max-w-[520px] h-[300px] md:h-[761px] relative">
+      <div className="md:max-w-[452px] h-[300px] md:h-[525px] w-full">
         <Image
           src={imageUrl || "/top/message/message_img.png"}
           alt={name || "message"}
-          fill
-          className="object-cover"
+          className="object-cover h-full w-full"
+          width={452}
+          height={525}
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AboutSection_04;
+export default AboutSection_04

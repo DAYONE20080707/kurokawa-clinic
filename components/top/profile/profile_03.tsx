@@ -1,12 +1,12 @@
 // components/profile/Profile_03.tsx
-"use client";
+"use client"
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import PageContent from "@/components/ui/frame/PageContent";
-import ProfileCard from "@/components/ui/ItemCard/ProfileCard";
+import { useState, useEffect } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import PageContent from "@/components/ui/frame/PageContent"
+import ProfileCard from "@/components/ui/ItemCard/ProfileCard_01"
 
 const Profile_03 = () => {
   return (
@@ -65,7 +65,7 @@ const Profile_03 = () => {
         </section>
       </PageContent>
     </>
-  );
-};
+  )
+}
 
-export default Profile_03;
+export default Profile_03
