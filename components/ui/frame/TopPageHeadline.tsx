@@ -67,7 +67,7 @@ const TopPageHeadline: React.FC<TopPageHeadlineProps> = ({
         {discription}
       </p>
       <div className="mt-14">
-        <MoreLinkButton href="/about">当院のご紹介</MoreLinkButton>
+        <MoreLinkButton href="/coming-soon">当院のご紹介</MoreLinkButton>
       </div>
     </section>
   )
