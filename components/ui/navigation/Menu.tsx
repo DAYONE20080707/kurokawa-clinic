@@ -4,17 +4,17 @@ export const Menu = [
   {
     name: "About us",
     nameJa: "当院のご紹介",
-    href: "/#news",
+    href: "/coming-soon",
   },
   {
     name: "Our Service",
     nameJa: "診療のご案内",
-    href: "/#service",
+    href: "/#treatment",
   },
   {
     name: "Who we are",
     nameJa: "院内のご様子",
-    href: "/#hospital",
+    href: "/#clinic",
   },
   // {
   //   name: '料金プラン',

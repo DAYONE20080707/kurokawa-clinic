@@ -13,7 +13,7 @@ const ContactButtonHeader = ({
 
   return (
     <Link
-      href="/contact"
+      href="/coming-soon"
       className={`bg-accentColor text-white cursor-pointer flex items-center justify-center w-[300px] py-4 ${
         isEnglish ? "font-en text-lg tracking-[0.03em]" : " text-xl tracking-[0.05em]"
       } ${className}`}

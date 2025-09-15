@@ -22,7 +22,7 @@ const About_04 = () => {
               当時はこの地には医療機関が一軒もなく、住宅もまだ少なかったです。
 医院建物・設備の老朽化により、旧医院の向かいの土地に新しく医院建物を建築し、2020（令和2）年
 6月から診療を開始して、現在に至っています。`}
-            buttonHref="/about"
+            buttonHref="/coming-soon"
             // 以下は任意
             imageUrl="/top/about/hospital.jpg"
             // position="代表取締役"

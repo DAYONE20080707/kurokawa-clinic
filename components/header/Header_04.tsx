@@ -22,10 +22,12 @@ const Header_04 = () => {
 
   const { companyName } = CompanyInfo[0]
   return (
-    <header className="w-full h-20 md:h-20 text-[#393939] tracking-wide px-4 md:px-0 fixed top-0 left-0 z-10 bg-white">
+    <header className="w-full h-20 md:h-20 tracking-wide px-4 md:px-0 fixed top-0 left-0 z-10 bg-white">
       <div className="h-full mx-auto flex items-center justify-between ">
         <div className="flex items-center space-x-10 px-5 md:px-20">
-          <Link href="/" className="md:w-[295px]">{CompanyInfo[0].companyName("primary")}</Link>
+          <Link href="/" className="md:w-[295px]">
+            {CompanyInfo[0].companyName("primary")}
+          </Link>
         </div>
         <div className="hidden md:flex justify-between items-center h-full">
           <ul className="hidden md:flex items-center space-x-10 font-semibold whitespace-nowrap px-10">
