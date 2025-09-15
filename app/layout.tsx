@@ -27,8 +27,8 @@ const spectral = Spectral({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | チョイスWeb制作",
-    default: "チョイスのWeb制作は",
+    template: "%s | 医療法人 愛基会　黒川医院",
+    default: "医療法人 愛基会　黒川医院",
   },
   icons: {
     icon: "/common/favicon.ico",
