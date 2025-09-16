@@ -19,7 +19,7 @@ const Service_01 = () => {
   return (
     <>
       <PageContent>
-        <section className="md:max-w-[1200px] mx-auto space-y-10 md:space-y-14">
+        <section className="md:max-w-[1200px] mx-auto space-y-10 md:space-y-16">
           <ContentHeadline
             enTitle="Treatment"
             mainTitle="診療のご案内"

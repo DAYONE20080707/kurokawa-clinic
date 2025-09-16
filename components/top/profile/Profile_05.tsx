@@ -51,7 +51,7 @@ const Profile_05 = () => {
                 </h4>
 
                 <div className="overflow-x-auto">
-                  <table className="w-full text-base">
+                  <table className="w-full text-base ![line-height:160%]">
                     <thead>
                       <tr className="border-b border-[#d9d9d9]">
                         <th className="text-left py-2 font-medium w-[120px]">

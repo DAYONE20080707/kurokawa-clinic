@@ -39,8 +39,8 @@ const Footer1 = () => {
               ))}
             </ul>
             <div className="mt-7 flex flex-col md:flex-row gap-2">
-              <ContactButton className="">メールでお問い合わせ</ContactButton>
-              <ContactButtonTel className="">072-687-0373</ContactButtonTel>
+              <ContactButton className="md:w-[250px]">メールでお問い合わせ</ContactButton>
+              <ContactButtonTel className="md:w-[250px]">072-687-0373</ContactButtonTel>
             </div>
           </div>
         </div>

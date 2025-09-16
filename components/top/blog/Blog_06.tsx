@@ -70,7 +70,7 @@ const Blog_06 = ({ limit = 5 }: BlogProps) => {
   return (
     <SectionContent className="md:!py-20" variant="yellow">
       <section className="md:max-w-[1200px] mx-auto ">
-        <div className="bg-white md:flex justify-between gap-x-20 py-8 px-4 md:p-14 rounded-[20px]">
+        <div className="bg-white md:flex justify-between gap-x-20 py-8 px-4 md:p-16 rounded-[20px]">
           <div className="md:w-[167px]">
             <ContentHeadline enTitle="News" mainTitle="病院からのお知らせ" />
             {/* <div className="mt-0 md:mt-16">

@@ -13,7 +13,7 @@ export const Menu = [
   },
   {
     name: "Who we are",
-    nameJa: "院内のご様子",
+    nameJa: "院内の様子",
     href: "/#clinic",
   },
   // {

@@ -14,7 +14,7 @@ const About_04 = () => {
     <>
       <SectionContent className="" variant="yellow">
         {/* widthがフルサイズでない場合は指定する */}
-        <section className=" md:max-w-[1200px] mx-auto bg-white p-5 md:p-14 rounded-[20px]">
+        <section className=" md:max-w-[1200px] mx-auto bg-white p-5 md:p-16 rounded-[20px]">
          
           <AboutSection
             // title="無数の選択肢の中から\nベストな選択を"
