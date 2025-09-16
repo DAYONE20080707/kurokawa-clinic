@@ -29,10 +29,7 @@ const TopPageHeadline: React.FC<TopPageHeadlineProps> = ({
 }) => {
   return (
     <section
-      className={classNames(
-        "md:max-w-[640px] w-full px-4 md:px-5 text-baseColor",
-        className
-      )}
+      className={classNames("w-full px-4 md:px-5 text-baseColor", className)}
     >
       {/* <Breadcrumb
         mainTitle={mainTitle}
@@ -41,7 +38,7 @@ const TopPageHeadline: React.FC<TopPageHeadlineProps> = ({
       /> */}
       <h2
         className={classNames(
-          "text-lg md:text-2xl font-bold mb-4 font-poppins leading-normal",
+          "text-lg md:text-[32px] font-medium mb-4 leading-normal",
           subtitleClassName
         )}
       >
@@ -49,7 +46,7 @@ const TopPageHeadline: React.FC<TopPageHeadlineProps> = ({
       </h2>
       <h1
         className={classNames(
-          "text-3xl leading-normal md:text-[64px] md:leading-[160%] font-en tracking-[0.03em]",
+          "text-3xl leading-normal md:text-[48px] md:leading-[160%] tracking-[0.03em] font-semibold",
           titleClassName
         )}
       >
@@ -63,7 +60,12 @@ const TopPageHeadline: React.FC<TopPageHeadlineProps> = ({
       >
         {subtitleBottom}
       </h3>
-      <p className={classNames("mt-4 md:text-lg tracking-[0.05em] leading-[160%]", discriptionClassName)}>
+      <p
+        className={classNames(
+          "mt-4 md:text-lg tracking-[0.05em] leading-[160%]",
+          discriptionClassName
+        )}
+      >
         {discription}
       </p>
       <div className="mt-14">
