@@ -27,26 +27,36 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   showButton = true, // デフォルトでボタンを表示する設定
 }) => {
   return (
-    <div className={classNames("relative overflow-hidden", className)}>
+    <div
+      className={classNames(
+        "md:w-[18.8%] relative overflow-hidden rounded-[20px] bg-white shadow-[0_0_25px_0_#E5E3DA] p-4 md:p-6 space-y-2",
+        className
+      )}
+    >
+      <div
+        className={classNames(
+          "font-medium text-lg text-center  leading-[160%] tracking-[0.03em]",
+          {
+            "text-white": className.includes("overlay"),
+            "text-baseColor": !className.includes("overlay"),
+          }
+        )}
+      >
+        {title}
+      </div>
       <div
         className={classNames(
           {
-            "h-[250px] md:h-[400px] ": !className.includes("overlay"),
-            "h-[250px] md:h-[600px]": className.includes("overlay"),
+            "h-[240px] md:h-[120px] ": !className.includes("overlay"),
+            "h-[240px] md:h-[120px]": className.includes("overlay"),
           },
-          "w-full aspect-[1/1] relative rounded-[30px]",
+          "w-full aspect-[1/1] relative rounded-[10px] bg-lightgray bg-cover bg-no-repeat bg-center",
           imageContainerClass
         )}
-      >
-        <Image
-          fill
-          src={image}
-          alt={`solution ${id}`}
-          objectFit="cover"
-          className="block object-top rounded-[30px]"
-          priority
-        />
-      </div>
+        style={{
+          backgroundImage: `url(${image})`,
+        }}
+      />
 
       <div
         className={classNames("space-y-3 ", {
@@ -55,31 +65,30 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           "relative text-black ": !className.includes("overlay"),
         })}
       >
-        <div
-          className={classNames("font-bold text-[16px] font-poppins text-left text-accentColor ", {
-            "text-white": className.includes("overlay"),
-            "text-accentColor": !className.includes("overlay"),
-          })}
+        {/* <div
+          className={classNames(
+            "font-bold text-[16px] font-poppins text-left text-accentColor ",
+            {
+              "text-white": className.includes("overlay"),
+              "text-accentColor": !className.includes("overlay"),
+            }
+          )}
         >
           {subTitle}
-        </div>
+        </div> */}
+
         <div
-          className={classNames("font-medium text-[22px] font-poppins text-left  ", {
-            "text-white": className.includes("overlay"),
-            "text-baseColor": !className.includes("overlay"),
-          })}
-        >
-          {title}
-        </div>
-        <div
-          className={classNames("font-light",{
-            "text-white  px-10 md:px-20": className.includes("overlay"),
-            "text-baseColor": !className.includes("overlay"),
-          })}
+          className={classNames(
+            "font-medium text-base text-center whitespace-pre-line ",
+            {
+              "text-white  px-10 md:px-20": className.includes("overlay"),
+              "text-baseColor": !className.includes("overlay"),
+            }
+          )}
         >
           {description}
         </div>
-        {showButton && ( // showButtonがtrueの場合のみ表示
+        {/* {showButton && ( // showButtonがtrueの場合のみ表示
           <div
             className={classNames({
               hidden: className.includes("overlay"),
@@ -88,7 +97,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           >
             <ArrowRightLinkButton href={href} label="" />
           </div>
-        )}
+        )} */}
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ export const CompanyInfo = [
       <Image
         src={
           type === "primary"
-            ? "/common/logo_header.svg" // 1つ目のロゴパス（白色ロゴ）
+            ? "/common/logo.png" // 1つ目のロゴパス（白色ロゴ）
             : type === "secondary"
             ? "/common/logo_bk.svg" // 2つ目のロゴパス（黒色ロゴ）
             : "/common/logo.svg" // 3つ目のロゴパス（テキストなし）
@@ -17,10 +17,10 @@ export const CompanyInfo = [
         className="w-full h-full object-contain"
       />
     ),
-    companyPostalCode: "107-0062",
-    companyAddress: "東京都葛飾区青戸7-30-1-305号",
-    companyTel: "03-6455-5380",
-    companyTelHref: "tel:0364555380",
+    companyPostalCode: "569-1022",
+    companyAddress: "大阪府高槻市日吉台一番町16-1",
+    companyTel: "072-687-0373",
+    companyTelHref: "tel:0726870373",
     companyEmail: "info@company.co.jp",
   },
 ]

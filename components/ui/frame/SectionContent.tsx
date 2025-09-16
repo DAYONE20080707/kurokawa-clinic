@@ -7,7 +7,7 @@ interface SectionContentProps {
   children: ReactNode
   className?: string
   style?: React.CSSProperties
-  variant?: "default" | "dot"
+  variant?: "default" | "dot" | "yellow"
   id?: string
 }
 
@@ -30,6 +30,12 @@ const SectionContent: React.FC<SectionContentProps> = ({
         ...style,
       }
     }
+    if (variant === "yellow") {
+      return {
+        backgroundColor: "#FFEE9C",
+        ...style,
+      }
+    }
     return style
   }
 
@@ -37,10 +43,11 @@ const SectionContent: React.FC<SectionContentProps> = ({
     <div
       id={id}
       className={classNames(
-        "mx-auto py-14 md:py-[120px] px-4 md:px-5 overflow-x-hidden",
-        className
+        "mx-auto px-4 md:px-5 overflow-x-hidden",
+        "py-14 md:py-[120px]", // デフォルトのパディング
+        className // 上書き用のクラス（!importantが含まれる）を最後に適用
       )}
-      style={getVariantStyle()}
+      style={variant === "default" ? style : getVariantStyle()}
     >
       {children}
     </div>

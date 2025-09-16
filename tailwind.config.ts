@@ -24,14 +24,14 @@ const config = {
       fontFamily: {
         marcellus: ["Marcellus", "serif"],
         zenKaku: ["'Zen Kaku Gothic New'", "sans-serif"],
-        en: ["Marcellus", "serif"],
+        en: ["Spectral", "serif"],
       },
       colors: {
-        accentColor: "#F2A629",
-        baseColor: "#393939",
+        accentColor: "#FFB93F",
+        baseColor: "#643E2F",
         borderGray: "#393939",
         bgBlack: "#333333",
-        bgLightBlue: "#f7fcff",
+        bgYellow: "#FFEE9C",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

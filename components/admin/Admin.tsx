@@ -1,28 +1,28 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
-import { useStore } from "@/store/useStore";
-import { componentsConfig } from "@/lib/componentsConfig";
-import AdminLayout from "@/components/admin/AdminLayout";
-import Sidebar from "@/components/admin/Sidebar";
+import { useEffect, useState } from "react"
+import { useStore } from "@/store/useStore"
+import { componentsConfig } from "@/lib/componentsConfig"
+import AdminLayout from "@/components/admin/AdminLayout"
+import Sidebar from "@/components/admin/Sidebar"
 
 interface AdminProps {
-  pageName: keyof typeof componentsConfig;
+  pageName: keyof typeof componentsConfig
 }
 
 const Admin = ({ pageName }: AdminProps) => {
-  const [isHydrated, setIsHydrated] = useState(false);
-  const selectedSections = useStore((state) => state.selectedSections);
+  const [isHydrated, setIsHydrated] = useState(false)
+  const selectedSections = useStore((state) => state.selectedSections)
 
   useEffect(() => {
-    setIsHydrated(true);
-  }, []);
+    setIsHydrated(true)
+  }, [])
 
   if (!isHydrated) {
-    return null;
+    return null
   }
 
-  const pageConfig = componentsConfig[pageName];
+  const pageConfig = componentsConfig[pageName]
 
   return (
     <AdminLayout sidebarContent={Sidebar} pageName={pageName}>
@@ -33,7 +33,7 @@ const Admin = ({ pageName }: AdminProps) => {
           </section>
         ))}
     </AdminLayout>
-  );
-};
+  )
+}
 
-export default Admin;
+export default Admin
