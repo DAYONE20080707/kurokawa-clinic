@@ -26,7 +26,7 @@ const KeyVisual_01 = () => {
                 <>
                   <span>
                   地域に密着した <br />
-｢まちのお医者さん～かかりつけ医｣を <br />
+｢まちのお医者さん<br className="md:hidden" />～かかりつけ医｣を <br />
 目指しています
 
                   </span>
