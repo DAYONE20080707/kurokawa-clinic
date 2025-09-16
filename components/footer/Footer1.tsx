@@ -17,7 +17,7 @@ const Footer1 = () => {
       <div className="md:max-w-[1240px] mx-auto md:px-5">
         <div className="md:flex justify-between items-center">
           <div className="space-y-3">
-            <h4 className="w-[400px]">
+            <h4 className="w-[300px] md:w-[400px]">
               {CompanyInfo[0].companyName("primary")}
             </h4>
             <p>医療法人 愛基会　黒川医院</p>
@@ -38,7 +38,7 @@ const Footer1 = () => {
                 </li>
               ))}
             </ul>
-            <div className="mt-7 md:flex gap-2">
+            <div className="mt-7 flex flex-col md:flex-row gap-2">
               <ContactButton className="">メールでお問い合わせ</ContactButton>
               <ContactButtonTel className="">072-687-0373</ContactButtonTel>
             </div>

@@ -69,19 +69,19 @@ const Blog_06 = ({ limit = 5 }: BlogProps) => {
 
   return (
     <SectionContent className="md:!py-20" variant="yellow">
-      <section className="md:max-w-[1240px] mx-auto  px-5">
-        <div className="bg-white md:flex justify-between gap-x-20 p-4 md:p-14 rounded-[20px]">
+      <section className="md:max-w-[1200px] mx-auto ">
+        <div className="bg-white md:flex justify-between gap-x-20 py-8 px-4 md:p-14 rounded-[20px]">
           <div className="md:w-[167px]">
             <ContentHeadline enTitle="News" mainTitle="病院からのお知らせ" />
             {/* <div className="mt-0 md:mt-16">
               <MoreButton className="text-accentColor border-accentColor" />
             </div> */}
           </div>
-          <div className="mt-10 md:mt-0 md:w-[820px]">
+          <div className="mt-6 md:mt-0 md:w-[820px]">
             {contents.map((post) => (
               <div
                 key={post.id}
-                className="w-full md:flex border-b border-[#eeeeee] p-6 gap-4"
+                className="w-full md:flex border-b border-[#eeeeee] py-4 md:p-6 gap-4"
               >
                 <p className=" font-en font-bold italic">
                   {post.date
@@ -89,12 +89,12 @@ const Blog_06 = ({ limit = 5 }: BlogProps) => {
                     : ""}
                 </p>
                 <div className="md:flex gap-2">
-                  <p className="mt-1 md:mt-0 h-[25px] px-2 bg-accentColor rounded-[5px] text-white flex justify-center items-center text-xs min-w-[145px] flex-shrink-0">
+                  <p className="mt-1 md:mt-0 h-[25px] px-2 bg-accentColor rounded-[5px] text-white flex justify-center items-center text-xs min-w-[145px] flex-shrink-0 w-fit">
                     {Array.isArray(post.category) && post.category.length > 0
                       ? post.category.join(", ")
                       : "カテゴリーなし"}
                   </p>
-                  <p className="text-lg font-bold line-clamp-1">{post.title}</p>
+                  <p className="mt-1 md:mt-0 text-lg font-bold line-clamp-1">{post.title}</p>
                 </div>
               </div>
             ))}

@@ -6,6 +6,7 @@ import Image from "next/image"
 import Menu from "@/components/ui/navigation/Menu"
 import Sns from "@/components/ui/button/SnsButton"
 import TelButton from "@/components/ui/button/TelButton"
+import TelButtonHeader from "@/components/ui/button/TelButtonHeader"
 import ContactButton from "@/components/ui/button/ContactButton"
 import CompanyInfo from "@/components/ui/navigation/CompanyInfo"
 import ContactButtonHeader from "../ui/button/ContactButtonHeader"
@@ -24,8 +25,8 @@ const Header_04 = () => {
   return (
     <header className="w-full h-20 md:h-20 tracking-wide px-4 md:px-0 fixed top-0 left-0 z-10 bg-white">
       <div className="h-full mx-auto flex items-center justify-between ">
-        <div className="flex items-center space-x-10 px-5 md:px-20">
-          <Link href="/" className="md:w-[295px]">
+        <div className="flex items-center space-x-10 md:px-20">
+          <Link href="/" className="w-[200px] md:w-[295px]">
             {CompanyInfo[0].companyName("primary")}
           </Link>
         </div>
@@ -43,7 +44,7 @@ const Header_04 = () => {
             <ContactButtonHeader className="h-full whitespace-nowrap">
               メールでお問い合わせ
             </ContactButtonHeader>
-            <TelButton className="h-full whitespace-nowrap" />
+            <TelButtonHeader className="h-full whitespace-nowrap" />
           </div>
         </div>
         {/* ハンバーガーメニューボタン */}
@@ -62,7 +63,7 @@ const Header_04 = () => {
 
       {/* ハンバーガーメニュー */}
       <div
-        className={`fixed z-10 top-0 right-0 h-screen w-full md:w-[500px] bg-bgBlack text-white shadow-lg transform transition-transform duration-300 ${
+        className={`fixed z-10 top-0 right-0 h-screen w-full md:w-[500px] bg-bgYellow shadow-lg transform transition-transform duration-300 ${
           MenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -74,8 +75,8 @@ const Header_04 = () => {
             className="w-10 h-10"
           >
             <div className="w-[38px] h-[38px] relative">
-              <div className="w-[53.74px] bg-white h-[1px] left-0 top-0 absolute origin-top-left rotate-45 border border-white"></div>
-              <div className="w-[53.74px] bg-white h-[1px] left-[38px] top-0 absolute origin-top-left rotate-[135deg] border border-white"></div>
+              <div className="w-[53.74px] bg-white h-[1px] left-0 top-0 absolute origin-top-left rotate-45 border border-baseColor"></div>
+              <div className="w-[53.74px] bg-white h-[1px] left-[38px] top-0 absolute origin-top-left rotate-[135deg] border border-baseColor"></div>
             </div>
           </button>
         </div>
@@ -85,7 +86,7 @@ const Header_04 = () => {
           {Menu.map((item, index) => (
             <li key={index}>
               <Link href={item.href} className="text-lg font-semibold">
-                {item.name}
+                {item.nameJa}
               </Link>
             </li>
           ))}

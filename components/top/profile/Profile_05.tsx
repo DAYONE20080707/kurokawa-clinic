@@ -23,14 +23,15 @@ const Profile_05 = () => {
             <div className="md:w-1/2">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853707453!2d139.76454987585436!3d35.68124052997326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sfr!4v1728031590235!5m2!1sja!2sfr"
-                width="500"
+                width="100%"
                 height="546"
                 style={{ border: "0" }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-[300px] md:h-[546px]"
               />
             </div>
-            <div className=" md:w-1/2">
+            <div className="mt-8 md:mt-0 md:w-1/2">
               <div className="space-y-4">
                 <h3 className="text-accentColor text-xl font-bold ![line-height:160%]">
                   医療法人 愛基会　黒川医院

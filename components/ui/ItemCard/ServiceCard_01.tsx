@@ -29,7 +29,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <div
       className={classNames(
-        "w-[18.8%] relative overflow-hidden rounded-[20px] bg-white shadow-[0_0_25px_0_#E5E3DA] p-4 md:p-6 space-y-2",
+        "md:w-[18.8%] relative overflow-hidden rounded-[20px] bg-white shadow-[0_0_25px_0_#E5E3DA] p-4 md:p-6 space-y-2",
         className
       )}
     >
@@ -47,8 +47,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <div
         className={classNames(
           {
-            "h-[120px] md:h-[120px] ": !className.includes("overlay"),
-            "h-[120px] md:h-[120px]": className.includes("overlay"),
+            "h-[240px] md:h-[120px] ": !className.includes("overlay"),
+            "h-[240px] md:h-[120px]": className.includes("overlay"),
           },
           "w-full aspect-[1/1] relative rounded-[10px] bg-lightgray bg-cover bg-no-repeat bg-center",
           imageContainerClass

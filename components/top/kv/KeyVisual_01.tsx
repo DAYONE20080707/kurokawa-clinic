@@ -12,10 +12,10 @@ const KeyVisual_01 = () => {
     <>
       <FirstViewContent>
         {/* widthがフルサイズでない場合は指定する */}
-        <section className="relative h-screen md:h-[calc(100vh-80px)] mt-20">
+        <section className="relative h-screen md:h-[100vh]">
           {/* KeyVisualContentに高さを指定 */}
           <KeyVisualContent className="h-full" />
-          <div className="absolute inset-0 md:max-w-[1204px] mx-auto h-full">
+          <div className="absolute inset-0 md:max-w-[1204px] mx-auto h-full mt-20">
             <TopPageHeadline
               // subtitleTop={
               //   <>

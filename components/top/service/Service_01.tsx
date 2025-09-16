@@ -27,7 +27,7 @@ const Service_01 = () => {
             titleClassName=""
           />
 
-          <div className="md:flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4 ">
             {servicesToDisplay.map((service) => (
               <ServiceCard
                 key={service.id}
