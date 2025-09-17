@@ -22,7 +22,7 @@ const Profile_05 = () => {
           <div className="bg-white md:flex md:justify-center gap-20 w-full">
             <div className="md:w-1/2">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853707453!2d139.76454987585436!3d35.68124052997326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sfr!4v1728031590235!5m2!1sja!2sfr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.468972251154!2d135.61516947575188!3d34.86956817286014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010292f1a39a65%3A0xa218c5af318d3042!2z44CSNTY5LTEwMjIg5aSn6Ziq5bqc6auY5qe75biC5pel5ZCJ5Y-w5LiA55Wq55S677yR77yW4oiS77yR!5e0!3m2!1sja!2sjp!4v1757988988636!5m2!1sja!2sjp"
                 width="100%"
                 height="546"
                 style={{ border: "0" }}
