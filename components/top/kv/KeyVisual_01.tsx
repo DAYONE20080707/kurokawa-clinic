@@ -15,7 +15,7 @@ const KeyVisual_01 = () => {
         <section className="relative h-screen md:h-[100vh]">
           {/* KeyVisualContentに高さを指定 */}
           <KeyVisualContent className="h-full" />
-          <div className="absolute inset-0 md:max-w-[1465px] mx-auto h-full mt-[60px]">
+          <div className="absolute inset-0 md:max-w-[1465px] mx-auto h-full md:mt-[60px]">
             <TopPageHeadline
               subtitleTop={
                 <>
@@ -26,7 +26,7 @@ const KeyVisual_01 = () => {
                 <>
                   <span>
                   地域に密着した <br />
-｢まちのお医者さん<br className="md:hidden" />～かかりつけ医｣を <br />
+｢まちのお医者さん～<br className="md:hidden" />かかりつけ医｣を <br />
 目指しています
 
                   </span>

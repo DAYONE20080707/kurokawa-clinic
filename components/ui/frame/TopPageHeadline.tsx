@@ -29,7 +29,7 @@ const TopPageHeadline: React.FC<TopPageHeadlineProps> = ({
 }) => {
   return (
     <section
-      className={classNames("w-full px-4 md:px-5 text-baseColor", className)}
+      className={classNames("w-full px-6 md:px-5 text-baseColor -mt-10 md:mt-[60px]", className)}
     >
       {/* <Breadcrumb
         mainTitle={mainTitle}
@@ -38,7 +38,7 @@ const TopPageHeadline: React.FC<TopPageHeadlineProps> = ({
       /> */}
       <h2
         className={classNames(
-          "text-lg md:text-[32px] font-medium mb-4 leading-normal",
+          "text-lg md:text-[32px] font-medium mb-[10px] md:mb-4 leading-[160%] tracking-[0.03em]",
           subtitleClassName
         )}
       >
@@ -46,7 +46,7 @@ const TopPageHeadline: React.FC<TopPageHeadlineProps> = ({
       </h2>
       <h1
         className={classNames(
-          "text-3xl leading-normal md:text-[48px] md:leading-[160%] tracking-[0.03em] font-semibold",
+          "text-[24px] md:text-[48px] leading-[160%] tracking-[0.03em] font-semibold",
           titleClassName
         )}
       >
@@ -68,7 +68,7 @@ const TopPageHeadline: React.FC<TopPageHeadlineProps> = ({
       >
         {discription}
       </p>
-      <div className="mt-14">
+      <div className="mt-10 md:mt-14">
         <MoreLinkButton href="/coming-soon">当院のご紹介</MoreLinkButton>
       </div>
     </section>

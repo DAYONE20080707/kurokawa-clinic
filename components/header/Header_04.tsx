@@ -23,17 +23,20 @@ const Header_04 = () => {
 
   const { companyName } = CompanyInfo[0]
   return (
-    <header className="w-full h-20 md:h-[100px] tracking-wide px-4 md:px-0 fixed top-0 left-0 z-10 bg-white">
+    <header className="w-full h-[75px] md:h-[100px] tracking-wide px-6 md:px-0 fixed top-0 left-0 z-10 bg-white">
       <div className="h-full mx-auto flex items-center justify-between ">
         <div className="flex items-center space-x-10 md:px-20">
-          <Link href="/" className="w-[200px] md:w-[295px]">
+          <Link href="/" className="w-[212px] md:w-[295px]">
             {CompanyInfo[0].companyName("primary")}
           </Link>
         </div>
         <div className="hidden md:flex justify-between items-center h-full">
           <ul className="hidden md:flex items-center space-x-10 font-semibold whitespace-nowrap px-10">
             {Menu.map((item, index) => (
-              <li key={index} className="py-4 whitespace-nowrap text-base tracking-[0.03em]">
+              <li
+                key={index}
+                className="py-4 whitespace-nowrap text-base tracking-[0.03em]"
+              >
                 <Link href={item.href}>
                   <div>{item.nameJa}</div>
                 </Link>
@@ -49,15 +52,14 @@ const Header_04 = () => {
         </div>
         {/* ハンバーガーメニューボタン */}
         <div
-          className="md:hidden w-10 md:w-20 h-20 flex items-center ustify-end md:justify-center cursor-pointer"
+          className="md:hidden w-10 h-10 flex items-center justify-center cursor-pointer"
           onClick={toggleMenu}
         >
-          <Image
-            src="/common/Menu.png"
-            alt="メニューボタン"
-            width={38}
-            height={38}
-          />
+          <div className="w-10 h-10 bg-baseColor flex flex-col justify-center items-center space-y-[6px]">
+            <div className="w-[21px] h-0.5 bg-white"></div>
+            <div className="w-[21px] h-0.5 bg-white"></div>
+            <div className="w-[21px] h-0.5 bg-white"></div>
+          </div>
         </div>
       </div>
 

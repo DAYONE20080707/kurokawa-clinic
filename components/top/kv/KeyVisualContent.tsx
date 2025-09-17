@@ -13,7 +13,11 @@ const KeyVisualContent: React.FC<KeyVisualContentProps> = ({ className }) => {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const slides = [
-    { src: "/top/kv/kv_img1.jpg", alt: "KV Image 1" },
+    {
+      pc: "/top/kv/kv_img1.jpg",
+      sp: "/top/kv/kv_img1_sp.jpg",
+      alt: "KV Image 1",
+    },
   ]
 
   useEffect(() => {
@@ -33,12 +37,23 @@ const KeyVisualContent: React.FC<KeyVisualContentProps> = ({ className }) => {
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >
+          {/* PC表示（md以上） */}
           <Image
-            src={slide.src}
+            src={slide.pc}
             alt={slide.alt}
             priority={index === 0}
             fill
-            className="object-cover"
+            sizes="(min-width: 768px) 100vw"
+            className="hidden md:block object-cover"
+          />
+          {/* SP表示（md未満） */}
+          <Image
+            src={slide.sp}
+            alt={slide.alt}
+            priority={index === 0}
+            fill
+            sizes="100vw"
+            className="block md:hidden object-cover"
           />
           {/* 黒20%のグラデーションオーバーレイ */}
           {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/20"></div> */}
