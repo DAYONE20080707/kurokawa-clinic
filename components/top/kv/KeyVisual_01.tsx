@@ -19,17 +19,18 @@ const KeyVisual_01 = () => {
             <TopPageHeadline
               subtitleTop={
                 <>
-                  高槻市の内科・小児科 黒川医院
-                </>
-              }
-              mainTitle={
-                <>
-                  <span>
+                 <span>
                   地域に密着した <br />
 ｢まちのお医者さん～<br className="md:hidden" />かかりつけ医｣を <br />
 目指しています
 
                   </span>
+                  
+                </>
+              }
+              mainTitle={
+                <>
+                 高槻市の内科・小児科 <br className="md:hidden" />黒川医院
                 </>
               }
               // subtitleBottom={
