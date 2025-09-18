@@ -13,9 +13,11 @@ const ContactButtonHeader = ({
 
   return (
     <Link
-      href="/coming-soon"
+      href="mailto:info@ku-ro.com"
       className={`bg-accentColor text-white cursor-pointer flex items-center justify-center w-[300px] py-4 ${
-        isEnglish ? "font-en text-lg tracking-[0.03em]" : " text-xl tracking-[0.05em]"
+        isEnglish
+          ? "font-en text-lg tracking-[0.03em]"
+          : " text-xl tracking-[0.05em]"
       } ${className}`}
     >
       <EnvelopeIcon className="w-6 h-5 mr-2" />

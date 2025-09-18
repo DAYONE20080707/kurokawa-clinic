@@ -36,30 +36,31 @@ const TopPageHeadline: React.FC<TopPageHeadlineProps> = ({
         parentDirectoryName={parentDirectoryName}
         parentDirectoryLink={parentDirectoryLink}
       /> */}
-      <h2
-        className={classNames(
-          "text-lg md:text-[32px] font-medium mb-[10px] md:mb-4 leading-[160%] tracking-[0.03em]",
-          subtitleClassName
-        )}
-      >
-        {subtitleTop}
-      </h2>
+
       <h1
         className={classNames(
-          "text-[24px] md:text-[48px] leading-[160%] tracking-[0.03em] font-semibold",
+          "text-[32px] md:text-[48px] leading-[160%] tracking-[0.03em] font-semibold mb-[10px] md:mb-4",
           titleClassName
         )}
       >
         {mainTitle}
       </h1>
-      <h3
+      <p
+        className={classNames(
+          "text-base md:text-[28px] font-medium leading-[160%] tracking-[0.03em]",
+          subtitleClassName
+        )}
+      >
+        {subtitleTop}
+      </p>
+      <p
         className={classNames(
           "text-sm md:text-xl mt-4 tracking-[0.05em] font-semibold md:leading-[160%]",
           subtitleClassName
         )}
       >
         {subtitleBottom}
-      </h3>
+      </p>
       <p
         className={classNames(
           "mt-4 md:text-lg tracking-[0.05em] leading-[160%]",
