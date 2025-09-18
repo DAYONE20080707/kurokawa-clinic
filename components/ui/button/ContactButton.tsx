@@ -13,7 +13,7 @@ const ContactButton = ({
 
   return (
     <Link
-      href="/coming-soon"
+      href="mailto:info@ku-ro.com"
       className={`bg-accentColor text-white cursor-pointer flex items-center justify-center w-full px-2 py-4 rounded-[10px] whitespace-nowrap ${
         isEnglish
           ? "font-en text-lg tracking-[0.03em]"
